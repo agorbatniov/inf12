@@ -1,0 +1,226 @@
+Tema: Duomenų struktūros pasirinkimas ir taikymas
+
+Užduotis: 
+Sukurti programą, kuri simuliuotų maisto užsakymų valdymo sistemą restorane. 
+
+---
+
+Scenarijus:
+Restorane užsakymai yra pateikiami klientų, ir šie užsakymai turi būti apdorojami tam tikra tvarka. 
+   - Užsakymai apdorojami atvykimo tvarka (FIFO – pirmas atvykęs, pirmas aptarnautas).  
+   - Restoranas gali apdoroti prioritetinius užsakymus (VIP klientai) pirmiausia.  
+   - Gėrimai visada atnešami prieš maistą (tačiau VIP maisto užsakymas turi prioritetą prieš ne-VIP gėrimą).
+
+---
+
+Reikalavimai:
+- Programa turėtų būti parašyta naudojant Python arba C++ kalbą.
+- Galima naudoti ChatGPT arba kitą dirbtinį intelektą, bet reikia išmanyti sugeneruotą kodą ir gebėti paaiškinti kiekvieną kodo eilutę.
+- Gynimo metu reikia gebėti greitai padaryti prašomus pakeitimus, taip įrodant, kad mokinys yra kodo autorius.
+
+---
+
+Nurodymai ir vertinimas:
+
+Maksimalus balas: 20 taškų = 10 balų. 2 taškai = 1 balas.  
+Galima pasirinkti TIK VIENĄ iš punktų: arba 3a, arba 3b. Pasirinkus abu, bus užskaitomas tik 1 punktas.
+
+1.  (1 taškas) Prasmingai pavadinkite programoje naudojamus kintamuosius ir funkcijas. 
+2.  (1 taškas) Išlaikykite programoje vientisą stilių, komentuokite programos logines dalis.		
+3a. (7 taškai) Nuskaitykite pradinius duomenis iš failų ir išsaugokite atitnkamoje duomenų struktūroje (-ose) (stekas, eilė, deklas), kurio (kurių) elemento tipas yra struktūra (klasė). 	
+3b. (2 taškai) Nuskaitykite pradinius duomenis iš failų ir išsaugokite atitnkamoje duomenų struktūroje (-ose) (masyvas, sąrašas), kurio (kurių) elemento tipas yra struktūra (klasė).
+4.  (3 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymų priėmimui (įvedant vieno patiekalo pavadinimą).
+5.  (3 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymų apdorojimui (grąžinančią vieno patiekalo pavadinimą).
+6.  (2 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymui atšaukti (įvedant patiekalo, kurį norite atšaukti, pavadinimą).
+7.  (2 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymams peržiūrėti (grąžina užsakymų sąrašą arba pranešimą, kad užsakymų nerasta).
+8.  (1 taškas) Programa apdoroja bent 20 užsakymų ir grąžina rezultatus ta pačia tvarka, kaip pateikta testiniuose duomenyse.
+
+---
+
+Testiniai duomenys:
+
+-- Kodas (Python)
+
+	# Užsakymas
+    restaurant.add_order("Kava")
+    
+	# VIP užsakymas (antras parametras "is_vip" yra True)
+    restaurant.add_order("Sriuba", True)
+    # Užsakymas
+	restaurant.add_order("Salotos")
+    
+    # Atvaizduojame užsakymus	
+	restaurant.display_orders()
+    
+    # užsakymų apdorojimas
+    restaurant.serve_order()
+    restaurant.serve_order()
+    
+    # Atvaizduojame užsakymus
+    restaurant.display_orders()
+    
+    restaurant.serve_order()
+    restaurant.display_orders()
+    restaurant.add_order("Sushi")
+    restaurant.add_order("Pica")    
+    restaurant.add_order("Gėrimas 1")    
+    restaurant.add_order("Gėrimas 2")
+
+    # Atvaizduojame užsakymus
+    restaurant.display_orders()
+    
+	# užsakymų apdorojimas
+    restaurant.serve_order()
+    restaurant.serve_order()
+    
+    # Atvaizduojame užsakymus
+    restaurant.display_orders()
+    
+    # Užsakymai
+    restaurant.add_order("Kepiniai")
+    restaurant.add_order("Desertas", True)    
+    restaurant.add_order("Gėrimas 3", True)    
+    restaurant.add_order("Steakas", True)      
+    restaurant.add_order("Gėrimas 4", True)
+	
+    restaurant.display_orders()
+	
+    restaurant.serve_order()
+    restaurant.serve_order()
+    restaurant.serve_order()
+    restaurant.serve_order()
+    restaurant.serve_order()
+    restaurant.serve_order()
+	
+    restaurant.display_orders()
+	
+    restaurant.add_order("Makaronai")
+    restaurant.add_order("Gėrimas 5")
+	
+    restaurant.serve_order()
+	
+    restaurant.add_order("Žuvies patiekalas")    
+    restaurant.add_order("Kepintas vištiena")    
+    restaurant.add_order("Gėrimas 6")
+	
+    restaurant.serve_order()
+    restaurant.serve_order()
+    restaurant.serve_order()
+	
+    restaurant.display_orders()
+	
+    restaurant.add_order("Desertas")    
+    restaurant.add_order("Gėrimas 7")    
+    restaurant.add_order("Gėrimas 8")
+	
+    restaurant.serve_order()
+    restaurant.serve_order()
+    restaurant.serve_order()
+    restaurant.serve_order()
+    restaurant.serve_order()
+    restaurant.serve_order()
+  
+    # Atvaizduojame užsakymus vėl
+    restaurant.display_orders()
+
+-- Grąžinamas tekstas
+
+Užsakymas pridėtas: Kava
+VIP užsakymas pridėtas: Sriuba
+Užsakymas pridėtas: Salotos
+
+-----------------------
+Užsakymų sąrašas:
+VIP užsakymai: ['Sriuba']
+Įprasti užsakymai: ['Kava', 'Salotos']
+-----------------------
+
+Aptarnaujamas VIP užsakymas: Sriuba
+Aptarnaujamas užsakymas: Kava
+
+-----------------------
+Užsakymų sąrašas:
+VIP užsakymai: []
+Įprasti užsakymai: ['Salotos']
+-----------------------
+
+Aptarnaujamas užsakymas: Salotos
+
+-----------------------
+Nėra užsakymų aptarnauti.
+-----------------------
+
+Užsakymas pridėtas: Sushi
+Užsakymas pridėtas: Pica
+Užsakymas pridėtas: Gėrimas 1
+Užsakymas pridėtas: Gėrimas 2
+
+-----------------------
+Užsakymų sąrašas:
+VIP užsakymai: []
+Įprasti užsakymai: ['Gėrimas 1', 'Gėrimas 2', 'Sushi', 'Pica']
+-----------------------
+
+Aptarnaujamas užsakymas: Gėrimas 1
+Aptarnaujamas užsakymas: Gėrimas 2
+
+-----------------------
+Užsakymų sąrašas:
+VIP užsakymai: []
+Įprasti užsakymai: ['Sushi', 'Pica']
+-----------------------
+
+Užsakymas pridėtas: Kepiniai
+VIP užsakymas pridėtas: Desertas
+VIP užsakymas pridėtas: Gėrimas 3
+VIP užsakymas pridėtas: Steakas
+VIP užsakymas pridėtas: Gėrimas 4
+
+-----------------------
+Užsakymų sąrašas:
+VIP užsakymai: ['Gėrimas 3', 'Gėrimas 4', 'Desertas', 'Steakas']
+Įprasti užsakymai: ['Sushi', 'Pica', 'Kepiniai']
+-----------------------
+
+Aptarnaujamas VIP užsakymas: Gėrimas 3
+Aptarnaujamas VIP užsakymas: Gėrimas 4
+Aptarnaujamas VIP užsakymas: Desertas
+Aptarnaujamas VIP užsakymas: Steakas
+Aptarnaujamas užsakymas: Sushi
+Aptarnaujamas užsakymas: Pica
+
+-----------------------
+Užsakymų sąrašas:
+VIP užsakymai: []
+Įprasti užsakymai: ['Kepiniai']
+-----------------------
+
+Užsakymas pridėtas: Makaronai
+Užsakymas pridėtas: Gėrimas 5
+Aptarnaujamas užsakymas: Gėrimas 5
+Užsakymas pridėtas: Žuvies patiekalas
+Užsakymas pridėtas: Kepintas vištiena
+Užsakymas pridėtas: Gėrimas 6
+Aptarnaujamas užsakymas: Kepiniai
+Aptarnaujamas užsakymas: Makaronai
+Aptarnaujamas užsakymas: Gėrimas 6
+
+-----------------------
+Užsakymų sąrašas:
+VIP užsakymai: []
+Įprasti užsakymai: ['Žuvies patiekalas', 'Kepintas vištiena']
+-----------------------
+
+Užsakymas pridėtas: Desertas
+Užsakymas pridėtas: Gėrimas 7
+Užsakymas pridėtas: Gėrimas 8
+Aptarnaujamas užsakymas: Žuvies patiekalas
+Aptarnaujamas užsakymas: Gėrimas 7
+Aptarnaujamas užsakymas: Gėrimas 8
+Aptarnaujamas užsakymas: Kepintas vištiena
+Aptarnaujamas užsakymas: Desertas
+Nėra užsakymų aptarnauti.
+
+-----------------------
+Nėra užsakymų aptarnauti.
+-----------------------
