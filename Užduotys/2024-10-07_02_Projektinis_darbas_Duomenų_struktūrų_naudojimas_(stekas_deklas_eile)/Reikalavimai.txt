@@ -1,0 +1,41 @@
+Namų užduotis: Duomenų struktūros pasirinkimas ir taikymas
+
+Užduotis: 
+Sukurti programą, kuri simuliuotų maisto užsakymų valdymo sistemą restorane. Mokiniai turi pasirinkti vieną iš šių duomenų struktūrų – eilę, steką arba deklą – ir ją panaudoti užsakymų apdorojimui.
+
+---
+
+Scenarijus:
+Restorane užsakymai yra pateikiami klientų, ir šie užsakymai turi būti apdorojami tam tikra tvarka. Priklausomai nuo pasirinktos duomenų struktūros, mokiniai turi suprogramuoti, kaip užsakymai yra priimami ir apdorojami:
+
+1. Eilė:
+   - Užsakymai apdorojami atvykimo tvarka (FIFO – pirmas atvykęs, pirmas aptarnautas).  
+   - Tinka tradiciniams užsakymų apdorojimams restorane, kai užsakymai atliekami eilės tvarka.
+
+2. Stekas: 
+   - Užsakymai apdorojami priešinga tvarka (LIFO – paskutinis atvykęs, pirmas aptarnautas).  
+   - Tinka situacijose, kai paskutiniai pateikti užsakymai turi būti aptarnauti pirmiau (pvz., kai prioritetas teikiamas tam tikriems klientams).
+
+3. Deklas: 
+   - Užsakymai gali būti apdorojami iš abiejų pusių – iš priekio arba iš galo.  
+   - Tinka situacijoms, kai tam tikri užsakymai turi prioritetą, o kiti – ne.
+
+---
+
+Reikalavimai:
+- Programa turi turėti funkciją užsakymų priėmimui.
+- Turi būti įgyvendinta funkcija užsakymų apdorojimui, priklausomai nuo pasirinktos duomenų struktūros.
+- Programa turėtų būti parašyta naudojant Python arba C++ kalbą.
+
+---
+
+Pavyzdžiai:
+
+- Eilės atveju: Užsakymai priimami ir apdorojami pirmo atvykimo tvarka. 
+- Steko atveju: Paskutinis priimtas užsakymas yra aptarnaujamas pirmas.
+- Deklo atveju: Restoranas gali apdoroti prioritetinius užsakymus pirmiausia, naudodamas eilės priekį arba įprastus užsakymus, naudodamas eilės galą.
+
+---
+
+Tikslas:  
+Mokiniai turėtų pademonstruoti savo supratimą apie duomenų struktūras, pasirinkti tinkamą struktūrą konkrečiam scenarijui ir sukurti veikiančią programą, kuri imituotų maisto užsakymų valdymo procesą.
