@@ -1,3 +1,10 @@
+Change log:
+2024-10-09 
+    - Pakeisti reikalavimai. Pašalintas punktas: "6.  (2 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymui atšaukti (įvedant patiekalo, kurį norite atšaukti, pavadinimą)."
+	- Pakeisti reikalavimai. 1 ir 8 punktų vertinamas yra pakeistas į 2 takškus už kiekvieną (buvo po 1)
+_______________________________________________
+
+
 Tema: Duomenų struktūros pasirinkimas ir taikymas
 
 Užduotis: 
@@ -25,15 +32,15 @@ Nurodymai ir vertinimas:
 Maksimalus balas: 20 taškų = 10 balų. 2 taškai = 1 balas.  
 Galima pasirinkti TIK VIENĄ iš punktų: arba 3a, arba 3b. Pasirinkus abu, bus užskaitomas tik 1 punktas.
 
-1.  (1 taškas) Prasmingai pavadinkite programoje naudojamus kintamuosius ir funkcijas. 
+1.  (2 taškas) Prasmingai pavadinkite programoje naudojamus kintamuosius ir funkcijas. 
 2.  (1 taškas) Išlaikykite programoje vientisą stilių, komentuokite programos logines dalis.		
 3a. (7 taškai) Nuskaitykite pradinius duomenis iš failų ir išsaugokite atitnkamoje duomenų struktūroje (-ose) (stekas, eilė, deklas), kurio (kurių) elemento tipas yra struktūra (klasė). 	
 3b. (2 taškai) Nuskaitykite pradinius duomenis iš failų ir išsaugokite atitnkamoje duomenų struktūroje (-ose) (masyvas, sąrašas), kurio (kurių) elemento tipas yra struktūra (klasė).
 4.  (3 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymų priėmimui (įvedant vieno patiekalo pavadinimą).
 5.  (3 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymų apdorojimui (grąžinančią vieno patiekalo pavadinimą).
-6.  (2 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymui atšaukti (įvedant patiekalo, kurį norite atšaukti, pavadinimą).
+6.  ---
 7.  (2 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymams peržiūrėti (grąžina užsakymų sąrašą arba pranešimą, kad užsakymų nerasta).
-8.  (1 taškas) Programa apdoroja bent 20 užsakymų ir grąžina rezultatus ta pačia tvarka, kaip pateikta testiniuose duomenyse.
+8.  (2 taškas) Programa apdoroja bent 20 užsakymų ir grąžina rezultatus ta pačia tvarka, kaip pateikta testiniuose duomenyse.
 
 ---
 
