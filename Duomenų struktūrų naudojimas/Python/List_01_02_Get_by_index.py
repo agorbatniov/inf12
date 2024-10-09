@@ -1,0 +1,1 @@
+first_item = my_list[0]  # 1
