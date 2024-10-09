@@ -1,7 +1,8 @@
 Change log:
 2024-10-09 
     - Pakeisti reikalavimai. Pašalintas punktas: "6.  (2 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymui atšaukti (įvedant patiekalo, kurį norite atšaukti, pavadinimą)."
-	- Pakeisti reikalavimai. 1 ir 8 punktų vertinamas yra pakeistas į 2 takškus už kiekvieną (buvo po 1)
+    - Pakeisti reikalavimai. 1 ir 8 punktų vertinamas yra pakeistas į 2 takškus už kiekvieną (buvo po 1)
+    - Pakeistas Scenarijus punktas 2. Pakeistą į "turi" (buvo gali). "Restoranas turi apdoroti prioritetinius užsakymus (VIP klientai) pirmiausia"
 _______________________________________________
 
 
@@ -15,7 +16,7 @@ Sukurti programą, kuri simuliuotų maisto užsakymų valdymo sistemą restorane
 Scenarijus:
 Restorane užsakymai yra pateikiami klientų, ir šie užsakymai turi būti apdorojami tam tikra tvarka. 
    - Užsakymai apdorojami atvykimo tvarka (FIFO – pirmas atvykęs, pirmas aptarnautas).  
-   - Restoranas gali apdoroti prioritetinius užsakymus (VIP klientai) pirmiausia.  
+   - Restoranas turi apdoroti prioritetinius užsakymus (VIP klientai) pirmiausia.  
    - Gėrimai visada atnešami prieš maistą (tačiau VIP maisto užsakymas turi prioritetą prieš ne-VIP gėrimą).
 
 ---
