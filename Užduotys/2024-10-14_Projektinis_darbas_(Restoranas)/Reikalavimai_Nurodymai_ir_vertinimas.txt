@@ -3,6 +3,8 @@ Change log:
     - Pakeisti reikalavimai. Pašalintas punktas: "6.  (2 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymui atšaukti (įvedant patiekalo, kurį norite atšaukti, pavadinimą)."
     - Pakeisti reikalavimai. 1 ir 8 punktų vertinamas yra pakeistas į 2 takškus už kiekvieną (buvo po 1)
     - Pakeistas Scenarijus punktas 2. Pakeistą į "turi" (buvo gali). "Restoranas turi apdoroti prioritetinius užsakymus (VIP klientai) pirmiausia"
+2024-10-10 
+    - Sutvarkytas testinių duomenų „grąžinamas tekstas“ (Gėrimas 6, Gėrimas 7, Gėrimas 8) buvo perkeltas į kitą vietą, siekiant užtikrinti teisingą eiliškumą.
 _______________________________________________
 
 
@@ -209,9 +211,9 @@ Aptarnaujamas užsakymas: Gėrimas 5
 Užsakymas pridėtas: Žuvies patiekalas
 Užsakymas pridėtas: Kepintas vištiena
 Užsakymas pridėtas: Gėrimas 6
+Aptarnaujamas užsakymas: Gėrimas 6
 Aptarnaujamas užsakymas: Kepiniai
 Aptarnaujamas užsakymas: Makaronai
-Aptarnaujamas užsakymas: Gėrimas 6
 
 -----------------------
 Užsakymų sąrašas:
@@ -222,9 +224,9 @@ VIP užsakymai: []
 Užsakymas pridėtas: Desertas
 Užsakymas pridėtas: Gėrimas 7
 Užsakymas pridėtas: Gėrimas 8
-Aptarnaujamas užsakymas: Žuvies patiekalas
 Aptarnaujamas užsakymas: Gėrimas 7
 Aptarnaujamas užsakymas: Gėrimas 8
+Aptarnaujamas užsakymas: Žuvies patiekalas
 Aptarnaujamas užsakymas: Kepintas vištiena
 Aptarnaujamas užsakymas: Desertas
 Nėra užsakymų aptarnauti.
