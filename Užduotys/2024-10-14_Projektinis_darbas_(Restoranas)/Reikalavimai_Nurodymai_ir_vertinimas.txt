@@ -5,6 +5,8 @@ Change log:
     - Pakeistas Scenarijus punktas 2. Pakeistą į "turi" (buvo gali). "Restoranas turi apdoroti prioritetinius užsakymus (VIP klientai) pirmiausia"
 2024-10-10 
     - Sutvarkytas testinių duomenų „grąžinamas tekstas“ (Gėrimas 6, Gėrimas 7, Gėrimas 8) buvo perkeltas į kitą vietą, siekiant užtikrinti teisingą eiliškumą.
+2024-10-14 
+    - Pakeisti reikalavimai (3a, 3b): duomenys nustatyti kode, nereikia skaitymo iš failo
 _______________________________________________
 
 
@@ -37,8 +39,8 @@ Galima pasirinkti TIK VIENĄ iš punktų: arba 3a, arba 3b. Pasirinkus abu, bus 
 
 1.  (2 taškas) Prasmingai pavadinkite programoje naudojamus kintamuosius ir funkcijas. 
 2.  (1 taškas) Išlaikykite programoje vientisą stilių, komentuokite programos logines dalis.		
-3a. (7 taškai) Nuskaitykite pradinius duomenis iš failų ir išsaugokite atitnkamoje duomenų struktūroje (-ose) (stekas, eilė, deklas), kurio (kurių) elemento tipas yra struktūra (klasė). 	
-3b. (2 taškai) Nuskaitykite pradinius duomenis iš failų ir išsaugokite atitnkamoje duomenų struktūroje (-ose) (masyvas, sąrašas), kurio (kurių) elemento tipas yra struktūra (klasė).
+3a. (7 taškai) Nuskaitykite pradinius duomenis iš kodo ir išsaugokite atitnkamoje duomenų struktūroje (-ose) (stekas, eilė, deklas), kurio (kurių) elemento tipas yra struktūra (klasė). 	
+3b. (2 taškai) Nuskaitykite pradinius duomenis iš kodo ir išsaugokite atitnkamoje duomenų struktūroje (-ose) (masyvas, sąrašas), kurio (kurių) elemento tipas yra struktūra (klasė).
 4.  (3 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymų priėmimui (įvedant vieno patiekalo pavadinimą).
 5.  (3 taškai) Sukurkite funkciją (paprogramę), skirtą užsakymų apdorojimui (grąžinančią vieno patiekalo pavadinimą).
 6.  ---
