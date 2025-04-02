@@ -1,0 +1,12 @@
+Paieška: 90
+Nuosekli paieška: indeksas 6, 90==90, laikas 0.000002 s
+Dvejetainė paieška: indeksas 9, 90==90, laikas 0.000003 s
+----------------------------------------
+Paieška: 15
+Nuosekli paieška: indeksas 7, 15==15, laikas 0.000002 s
+Dvejetainė paieška: indeksas 4, 15==15, laikas 0.000001 s
+----------------------------------------
+Paieška: 66
+Nuosekli paieška: NERASTA, laikas 0.000001 s
+Dvejetainė paieška: NERASTA, laikas 0.000001 s
+----------------------------------------
