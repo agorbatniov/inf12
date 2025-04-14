@@ -1,0 +1,13 @@
+Duomenų struktūrų naudojimas. Aibė, Žodynas.
+Duomenų struktūrų naudojimas. Sąrašai ir Masyvai.
+Duomenų struktūrų naudojimas: Stekas, Eilės, Deklas.
+Skaitmeninių įrenginių ir programinės įrangos galimų sutrikimų aptarimas ir šalinimo būdų paieška.
+Skaitmeninių komunikavimo ir bendravimo technologijų įvairovė ir svarba.
+Programų testavimas ir taisymas.
+Grupinio programavimo sistemos.
+Algoritmai ir programavimas.
+Algoritmai. Trumpiausio kelio algoritmai.
+Rūšiavimo algoritmai.
+Paieškos algoritmai.
+Skaitmeninio turinio kūrimas (Animuotų kompiuterinės grafikos 2D objektų kūrimas).
+Elektroniniai leidiniai.
